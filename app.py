@@ -3,7 +3,7 @@ from flask import Flask, request
 import telebot
 
 # جلب توكن البوت من متغيرات البيئة في Render
-TOKEN = os.environ.get("TELEGRAM_TOKEN")
+TOKEN = os.environ.get("BOT_TOKEN")
 
 bot = telebot.TeleBot(TOKEN, threaded=False)
 
